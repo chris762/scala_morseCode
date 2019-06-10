@@ -1,3 +1,23 @@
+
+def trySomething (a: Int, b:Int): Int = {
+ a + b
+}
+
+def tryThis(i: => Int): Unit = {
+  println(s"I am $i")
+  println(s"I am $i")
+  println(s"I am $i")
+  println(s"I am $i")
+}
+
+var initial = 0
+tryThis {initial +=1; initial}
+
+
+
+
+
+/*
 // Simple example
 def add(x: Int, y: Int) = x + y
 
@@ -59,4 +79,6 @@ def isSorted[A](as: Array[A], gt: (A,A) => Boolean): Boolean = {
 
   go(0)
 }
+
+
 

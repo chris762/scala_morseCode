@@ -5,11 +5,11 @@ object Main {
 
     //id_letters object
     val id_letters = new FileParser
-    val id_letters_map = id_letters.makeMap("/Users/chris/Desktop/morseCode/id_letters.csv")
+    val id_letters_map = id_letters.makeMap("id_letters.csv")
 
     //id_codes object
     val id_codes = new FileParser
-    val id_codes_map = id_codes.makeMap("/Users/chris/Desktop/morseCode/id_codes.csv")
+    val id_codes_map = id_codes.makeMap("id_codes.csv")
 
     //Build master map
     val master_m = new FileParser
